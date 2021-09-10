@@ -1,15 +1,6 @@
 import { Box, Button, Grommet, Heading } from 'grommet';
 import { Notification } from 'grommet-icons';
-
-const theme = {
-    global: {
-        font: {
-            family: 'Roboto',
-            size: '18px',
-            height: '20px',
-        },
-    },
-};
+import theme from '../style/theme';
 
 const AppBar = (props) => (
     <Box
