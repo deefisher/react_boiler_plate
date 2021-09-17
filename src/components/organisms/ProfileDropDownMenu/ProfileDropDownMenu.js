@@ -4,7 +4,7 @@ import { FormDown, Logout, SettingsOption, User } from 'grommet-icons';
 import React from 'react';
 
 export const labelText = {
-    SETTINGS: 'Settings',
+    SETTINGS: 'Settings2',
     LOGOUT: 'Log out',
 };
 
@@ -13,6 +13,11 @@ export const ariaLabels = {
     dropMenu: 'Drop menu',
     profileDropdown: 'Profile drop down',
 };
+
+const profileDropMenuItems = [
+    { label: labelText.SETTINGS, icon: <SettingsOption size="16px" />, onItemClick: () => {} },
+    { label: labelText.LOGOUT, icon: <Logout size="15px" />, onItemClick: () => {} },
+];
 
 const DropMenu = ({ items, ...props }) => {
     return (
@@ -37,6 +42,7 @@ const DropMenu = ({ items, ...props }) => {
         </Box>
     );
 };
+
 const ProfileDropDownMenu = (props) => {
     return (
         <DropButton
@@ -64,14 +70,7 @@ const ProfileDropDownMenu = (props) => {
                 top: 'bottom',
                 right: 'right',
             }}
-            dropContent={
-                <DropMenu
-                    items={[
-                        { label: labelText.SETTINGS, icon: <SettingsOption size="15px" />, onItemClick: () => {} },
-                        { label: labelText.LOGOUT, icon: <Logout size="15px" />, onItemClick: () => {} },
-                    ]}
-                />
-            }
+            dropContent={<DropMenu items={profileDropMenuItems} />}
             dropProps={{
                 elevation: 'custom',
             }}
