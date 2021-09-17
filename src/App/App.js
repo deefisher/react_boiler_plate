@@ -23,8 +23,7 @@ function App() {
                         elevation="small"
                         align="center"
                         justify="center"
-                    >
-</Box>
+                    ></Box>
                 </Box>
             </Box>
         </Grommet>
