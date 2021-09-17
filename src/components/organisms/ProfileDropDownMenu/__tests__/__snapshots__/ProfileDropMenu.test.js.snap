@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProfileDropMenu should render ProfileDropMenu correctly 1`] = `
+<DocumentFragment>
+  <button
+    aria-label="Profile drop down"
+    class="StyledButton-sc-323bzc-0 kVhqUm"
+    type="button"
+  >
+    <div
+      class="StyledBox-sc-13pk1d4-0 hznAXC"
+    >
+      <div
+        class="StyledBox-sc-13pk1d4-0 goiyUR"
+      >
+        <svg
+          aria-label="User"
+          class="StyledIcon-sc-ofa7kd-0 KIpiB"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M8 24v-5m8 5v-5M3 24v-5c0-4.97 4.03-8 9-8s9 3.03 9 8v5m-9-13a5 5 0 1 0 0-10 5 5 0 0 0 0 10z"
+            fill="none"
+            stroke="#000"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+      <svg
+        aria-label="FormDown"
+        class="StyledIcon-sc-ofa7kd-0 jjvRzN"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="m18 9-6 6-6-6"
+          fill="none"
+          stroke="#000"
+          stroke-width="2"
+        />
+      </svg>
+    </div>
+  </button>
+</DocumentFragment>
+`;
