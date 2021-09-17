@@ -24,8 +24,7 @@ function App() {
                         align="center"
                         justify="center"
                     >
-                        sidebar
-                    </Box>
+</Box>
                 </Box>
             </Box>
         </Grommet>
