@@ -15,4 +15,12 @@ const ProfileDropDownMenuStory = {
     component: ProfileDropDownMenu,
 };
 
+OpenProfileDropDownMenu.args = {
+    with: 'props',
+};
+OpenProfileDropDownMenu.parameters = {
+    // Sets the delay for a specific story.
+    chromatic: { delay: 1000 },
+};
+
 export default ProfileDropDownMenuStory;
