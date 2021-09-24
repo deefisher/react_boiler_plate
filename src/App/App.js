@@ -1,4 +1,5 @@
-import { Box, Grommet, Header, Heading } from 'grommet';
+import { Box, Grommet, Header } from 'grommet';
+import { Diamond } from 'grommet-icons';
 import ProfileDropDownMenu from '../components/organisms/ProfileDropDownMenu/ProfileDropDownMenu';
 import theme from '../style/theme';
 
@@ -7,9 +8,7 @@ function App() {
         <Grommet theme={theme} full>
             <Box fill>
                 <Header a11yTitle="Header nav bar" background="header" height="4rem" pad={{ horizontal: 'medium' }}>
-                    <Heading level="3" margin="none">
-                        My App
-                    </Heading>
+                    <Diamond a11yTitle="Brand logo" size="38px" color="white" />
                     <ProfileDropDownMenu />
                 </Header>
                 <Box direction="row" flex overflow={{ horizontal: 'hidden' }}>

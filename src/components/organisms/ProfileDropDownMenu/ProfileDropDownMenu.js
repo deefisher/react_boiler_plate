@@ -55,13 +55,13 @@ const ProfileDropDownMenu = (props) => {
                         align="center"
                         round="50%"
                         background="brand"
-                        width="38px"
-                        height="38px"
+                        width="35px"
+                        height="35px"
                         margin={{
                             right: 'small',
                         }}
                     >
-                        <User size="20px" />
+                        <User size="19px" color="white" />
                     </Box>
                     <FormDown />
                 </Box>
