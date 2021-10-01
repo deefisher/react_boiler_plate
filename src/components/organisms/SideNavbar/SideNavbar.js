@@ -1,7 +1,8 @@
 import { Box, Button, Nav } from 'grommet';
 import { Diamond, Help, Projects, UserManager } from 'grommet-icons';
 import theme from '../../../style/theme';
-import { SidebarNavButton } from '../../__BRAND__/__BRAND__';
+import { routePaths } from '../../../utils/routing/routePaths';
+import { SidebarNavLink } from '../../__BRAND__/__BRAND__';
 
 const SideNavbar = () => {
     return (
@@ -34,10 +35,14 @@ const SideNavbar = () => {
                 }}
             >
                 <Nav gap="large">
-                    <SidebarNavButton icon={<Projects />} />
-                    <SidebarNavButton icon={<UserManager />} />
+                    <SidebarNavLink href={routePaths.projects}>
+                        <Projects />
+                    </SidebarNavLink>
+                    <SidebarNavLink href={routePaths.users}>
+                        <UserManager />
+                    </SidebarNavLink>
                 </Nav>
-                <SidebarNavButton icon={<Help />} />
+                <SidebarNavLink icon={<Help />} />
             </Box>
         </Box>
     );
