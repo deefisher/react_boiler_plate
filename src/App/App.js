@@ -1,6 +1,6 @@
 import { Box, Button, Grommet, Header, Main, Nav } from 'grommet';
 import { Diamond, Help, Projects, UserManager } from 'grommet-icons';
-import ProfileDropDownMenu from '../components/organisms/ProfileDropDownMenu/ProfileDropDownMenu';
+import { ProfileDropDownMenu, SidebarNavButton } from '../components/__BRAND__/__BRAND__';
 import theme from '../style/theme';
 
 function App() {
@@ -9,7 +9,9 @@ function App() {
             <Box fill direction="row">
                 <Box a11yTitle="Side bar" background="main" width={{ max: '100%' }} height={{ min: '100%' }}>
                     <Box width="100%" height={theme.dims.topBarHeight} align="center" pad="small" background="topbar">
-                        <Diamond a11yTitle="brand-logo" size={theme.dims.logoWidth} color="brand" />
+                        <Button>
+                            <Diamond a11yTitle="brand-logo" size={theme.dims.logoWidth} color="white" />
+                        </Button>
                     </Box>
                     <Box
                         justify="between"
@@ -20,16 +22,16 @@ function App() {
                             side: 'right',
                         }}
                     >
-                        <Nav gap="small">
-                            <Button icon={<Projects />} hoverIndicator />
-                            <Button icon={<UserManager />} hoverIndicator />
+                        <Nav gap="large">
+                            <SidebarNavButton icon={<Projects />} />
+                            <SidebarNavButton icon={<UserManager />} />
                         </Nav>
-                        <Button icon={<Help />} hoverIndicator />
+                        <SidebarNavButton icon={<Help />} />
                     </Box>
                 </Box>
                 <Box fill>
                     <Header
-                        a11yTitle="Header nav bar"
+                        a11yTitle="Top nav bar"
                         background="topbar"
                         height={theme.dims.topBarHeight}
                         pad={{ horizontal: 'medium' }}

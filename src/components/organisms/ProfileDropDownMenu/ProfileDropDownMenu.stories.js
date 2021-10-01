@@ -5,7 +5,7 @@ import ProfileDropDownMenu from './ProfileDropDownMenu';
 export const DefaultProfileDropDownMenu = (props) => <ProfileDropDownMenu {...props} />;
 export const OpenProfileDropDownMenu = () => <DefaultProfileDropDownMenu open />;
 export const ProfileDropDownMenuInDark = () => (
-    <Box background="header" width="300px" pad="medium">
+    <Box background="topbar" width="300px" pad="medium">
         <DefaultProfileDropDownMenu open />
     </Box>
 );
