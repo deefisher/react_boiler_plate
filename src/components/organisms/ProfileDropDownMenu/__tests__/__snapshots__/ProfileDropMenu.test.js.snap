@@ -11,11 +11,11 @@ exports[`ProfileDropMenu should render ProfileDropMenu correctly 1`] = `
       class="StyledBox-sc-13pk1d4-0 hznAXC"
     >
       <div
-        class="StyledBox-sc-13pk1d4-0 goiyUR"
+        class="StyledBox-sc-13pk1d4-0 gKVznV"
       >
         <svg
           aria-label="User"
-          class="StyledIcon-sc-ofa7kd-0 KIpiB"
+          class="StyledIcon-sc-ofa7kd-0 gYDKuB"
           viewBox="0 0 24 24"
         >
           <path

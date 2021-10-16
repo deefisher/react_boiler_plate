@@ -1,11 +1,12 @@
 import { act, fireEvent, render, screen } from '@testing-library/react';
 import ProfileDropDownMenu, { ariaLabels, labelText } from '../ProfileDropDownMenu';
+import { MemoryRouter } from 'react-router-dom';
 
 describe('ProfileDropMenu', () => {
     let wrapper;
     window.scrollTo = jest.fn();
     beforeEach(() => {
-        wrapper = render(<ProfileDropDownMenu />);
+        wrapper = render(<ProfileDropDownMenu />, { wrapper: MemoryRouter });
     });
 
     it('should render ProfileDropMenu correctly', () => {

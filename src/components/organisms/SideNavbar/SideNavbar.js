@@ -1,5 +1,6 @@
-import { Box, Button, Nav } from 'grommet';
+import { Box, Nav } from 'grommet';
 import { Diamond, Help, Projects, UserManager } from 'grommet-icons';
+import { Link } from 'react-router-dom';
 import theme from '../../../style/theme';
 import { routePaths } from '../../../utils/routing/routePaths';
 import { SidebarNavLink } from '../../__BRAND__/__BRAND__';
@@ -17,9 +18,9 @@ const SideNavbar = () => {
             }}
         >
             <Box width="100%" height={theme.dims.topBarHeight} align="center" pad="small" background="topbar">
-                <Button>
+                <Link to={routePaths.home}>
                     <Diamond a11yTitle="brand-logo" size={theme.dims.logoWidth} color="white" />
-                </Button>
+                </Link>
             </Box>
             <Box
                 justify="between"

@@ -55,6 +55,19 @@ function App() {
                                         justify="center"
                                     ></Box>
                                 </Route>
+                                <Route path={routePaths.settings}>
+                                    <Box flex align="center" justify="center">
+                                        Settings
+                                    </Box>
+                                    <Box
+                                        height="1000px"
+                                        width="medium"
+                                        background="light-2"
+                                        elevation="small"
+                                        align="center"
+                                        justify="center"
+                                    ></Box>
+                                </Route>
                             </Switch>
                         </Main>
                     </Box>

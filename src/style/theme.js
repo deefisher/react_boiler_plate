@@ -10,6 +10,7 @@ const theme = {
             brand: '#fc521f',
             main: '#F6F9FC',
             border: 'rgba(0, 0, 0, 0.1)',
+            focus: 'brand',
         },
         elevation: {
             light: { custom: '0 4px 20px rgba(0,0,0,0.14)' },
