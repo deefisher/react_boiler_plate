@@ -5,6 +5,9 @@ import theme from '../../../style/theme';
 import { routePaths } from '../../../utils/routing/routePaths';
 import { SidebarNavLink } from '../../__BRAND__/__BRAND__';
 
+//TODO create test using this guide: https://testing-library.com/docs/example-react-router/
+//in order to test that all the nav links highlight correctly
+
 const SideNavbar = () => {
     return (
         <Box
@@ -43,7 +46,7 @@ const SideNavbar = () => {
                         <UserManager />
                     </SidebarNavLink>
                 </Nav>
-                <SidebarNavLink icon={<Help />} />
+                <SidebarNavLink icon={<Help />} href="#" />
             </Box>
         </Box>
     );
